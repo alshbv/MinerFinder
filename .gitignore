@@ -1,0 +1,10 @@
+
+*.bin
+.gradle/7.5/fileHashes/fileHashes.lock
+*.bin
+local.properties
+gradle/wrapper/gradle-wrapper.properties
+gradle/wrapper/gradle-wrapper.jar
+app/src/main/res/layout/activity_main.xml
+*.bin
+*.lock

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Chaquopy_Matplotlib_demo.iml" filepath="$PROJECT_DIR$/.idea/modules/Chaquopy_Matplotlib_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Chaquopy_Matplotlib_demo.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Chaquopy_Matplotlib_demo.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Chaquopy_Matplotlib_demo.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Chaquopy_Matplotlib_demo.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Chaquopy_Matplotlib_demo.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Chaquopy_Matplotlib_demo.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Chaquopy_Matplotlib_demo.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Chaquopy_Matplotlib_demo.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/benchmark/Chaquopy_Matplotlib_demo.benchmark.iml" filepath="$PROJECT_DIR$/.idea/modules/benchmark/Chaquopy_Matplotlib_demo.benchmark.iml" />
+    </modules>
+  </component>
+</project>

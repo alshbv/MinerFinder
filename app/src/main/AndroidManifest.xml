@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chaquo.myapplication">
+
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="33" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" /> <!-- Required for Nearby Connections -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Only required for apps targeting Android 12 and higher -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+
+
+    <application
+        android:enableOnBackInvokedCallback="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <service
+            android:name=".ConnectionService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".RecyclerView2"
+            android:label="RecyclerView2"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+
+        <service
+            android:name=".StepCounter"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".Account"
+            android:exported="false" />
+        <activity
+            android:name=".Pillar"
+            android:exported="false" />
+        <activity
+            android:name=".DataDisplay"
+            android:exported="false" />
+        <activity
+            android:name=".Sensors"
+            android:exported="false" />
+        <activity
+            android:name=".PhotoConnection2"
+            android:exported="false" />
+        <activity
+            android:name=".Connection"
+            android:exported="false" />
+        <activity
+            android:name=".PhotoConnection"
+            android:exported="false" />
+        <activity
+            android:name=".Photos"
+            android:exported="false" />
+        <activity
+            android:name=".Camera"
+            android:exported="false" />
+        <activity
+            android:name=".MinerDataDisplay"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".ContactDisplay"
+            android:label="Contact Display"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TestLocation"
+            android:label="Location Test"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+    </application>
+
+</manifest>

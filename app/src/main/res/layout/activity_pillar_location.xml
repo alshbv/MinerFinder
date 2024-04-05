@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/buttonAdvAsPillar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Broadcast as Pillar" />
+
+    <Button
+        android:id="@+id/buttonStopAsPillar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop as Pillar" />
+
+    <Button
+        android:id="@+id/buttonU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Recent Data" />
+
+    <TextView
+        android:id="@+id/PillarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Not advertising as a pillar"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/PillarConnectedTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Connected To:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Recent Data:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lastEntries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=" "
+        android:textStyle="bold" />
+</LinearLayout>

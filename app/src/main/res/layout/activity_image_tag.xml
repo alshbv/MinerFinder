@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView_tag"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/picture_frame"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- TextView to display the current tags -->
+    <TextView
+        android:id="@+id/currentTags_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  "
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_tag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- EditText for user-defined tags -->
+    <EditText
+        android:id="@+id/tagEntry_tag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter your tag here:"
+        android:padding="8dp"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/currentTags_tag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+
+    <Button
+        android:id="@+id/button1_tag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Load Image"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/tagEntry_tag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2_tag"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"/>
+
+    <Button
+        android:id="@+id/button2_tag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Show Tags"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/tagEntry_tag"
+        app:layout_constraintStart_toEndOf="@+id/button1_tag"
+        app:layout_constraintEnd_toStartOf="@+id/button3_tag"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"/>
+
+    <Button
+        android:id="@+id/button3_tag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Add Tag"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/tagEntry_tag"
+        app:layout_constraintStart_toEndOf="@+id/button2_tag"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
