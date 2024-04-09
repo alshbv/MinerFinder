@@ -53,20 +53,26 @@ class MyPayloadCallback(private val context: Context) : PayloadCallback() {
 
     private fun saveReceivedJson(jsonString: String) {
         // Specify the subfolder name where you want to save the received JSON data
-        val subfolderName = "received_json"
+        val subfolderName = "MinerData"
+        val subfolderName2 = "PillarData"
         val subfolder = File(context.filesDir, subfolderName)
-
+        val subfolder2 = File(context.filesDir, subfolderName2)
         // Create the subfolder if it doesn't exist
         if (!subfolder.exists()) {
             subfolder.mkdirs()
+        }
+        if (!subfolder2.exists()) {
+            subfolder2.mkdirs()
         }
 
         // Create a unique file name for each JSON payload (you can use a timestamp, UUID, etc.)
         val fileName = "received_payload_${System.currentTimeMillis()}.json"
         val file = File(subfolder, fileName)
+        val file2 = File(subfolder2, fileName)
 
         // Write the JSON data to the file
         file.writeText(jsonString)
+        file2.writeText(jsonString)
     }
 }
 
@@ -489,8 +495,8 @@ class StepCounter : Service(){
                 val currentCoords = get_coord(distance, angle.toDouble()) // Use getAzimuth() for angle
                 x += currentCoords[0]
                 y += currentCoords[1]
-                Log.d("X: ", x.toString())
-                Log.d("Y: ", y.toString())
+                //Log.d("X: ", x.toString())
+                //Log.d("Y: ", y.toString())
 
                 /*
                 val res = randomPillar(pillar, 0.3f)

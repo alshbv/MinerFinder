@@ -50,10 +50,12 @@ class MainActivity : AppCompatActivity() {
         if (requestCode == MY_PERMISSIONS_REQUEST_ACTIVITY_RECOGNITION) {
             if (grantResults.isNotEmpty() && grantResults.all { it == PackageManager.PERMISSION_GRANTED }) {
                 // All permissions granted, start your discovery here
+                Log.d("Permission(s) ASKED", "Permission(s) ASKED")
                 initiateAutomaticConnection()
             } else {
                 // Permission denied, handle accordingly
-                Toast.makeText(this, "Permission(s) denied", Toast.LENGTH_SHORT).show()
+                Log.d("Permission(s) denied", "Permission(s) denied")
+                //Toast.makeText(this, "Permission(s) denied", Toast.LENGTH_SHORT).show()
             }
         }
     }
@@ -290,7 +292,9 @@ class MainActivity : AppCompatActivity() {
             Manifest.permission.BLUETOOTH,
             Manifest.permission.BLUETOOTH_ADMIN,
             Manifest.permission.BLUETOOTH_SCAN,
-            Manifest.permission.BLUETOOTH_CONNECT
+            Manifest.permission.BLUETOOTH_CONNECT,
+            Manifest.permission.BLUETOOTH_ADVERTISE,
+            Manifest.permission.ACCESS_WIFI_STATE
         )
 
         val permissionsNotGranted = permissionsToRequest.filter {
@@ -304,7 +308,8 @@ class MainActivity : AppCompatActivity() {
                 MY_PERMISSIONS_REQUEST_ACTIVITY_RECOGNITION
             )
         } else {
-            // Permission already granted, start your discovery here
+            // Permission already granted, start discovery here
+            Log.d("PERMS2", "PERMS2")
             initiateAutomaticConnection()
         }
     }

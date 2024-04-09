@@ -13,7 +13,7 @@ android {
     defaultConfig {
         applicationId 'com.chaquo.minerfinder_demo'
         minSdkVersion 21
-        targetSdkVersion 31
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
 
